@@ -1,10 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-export default function AfterLoginLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type Prop = { children: ReactNode };
+
+export default function AfterLoginLayout({ children }: Prop) {
   return (
     <div>
       AfterLoginLayout
